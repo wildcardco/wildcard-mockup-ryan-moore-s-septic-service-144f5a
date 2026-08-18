@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moore's Septic Service — Pumping, Inspections & Repair | Call (812) 276-6455</title>
+<meta name="description" content="Moore's Septic Service: family-run septic pumping, inspections, repair, and emergency calls. 5.0 stars from 42 neighbors. Call (812) 276-6455.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --clay:#3b2a1d;
+  --clay-deep:#2b1e13;
+  --olive:#4d5433;
+  --olive-deep:#3a4027;
+  --rust:#c1541c;
+  --rust-hot:#d9601f;
+  --bone:#f1ebdd;
+  --bone-dim:#e6ddc9;
+  --line:#c9bda4;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Barlow Condensed",Arial,sans-serif;
+  font-size:1.15rem;
+  line-height:1.55;
+  color:var(--clay);
+  background:var(--bone);
+}
+h1,h2,h3,.stencil{font-family:"Oswald",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+a{color:var(--rust)}
+img{max-width:100%}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+
+/* grain */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:9;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* top bar */
+.topbar{
+  background:var(--clay-deep);color:var(--bone);
+  padding:.5rem 0;font-size:.95rem;
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.topbar strong{color:var(--rust-hot);font-family:"Oswald";text-transform:uppercase;letter-spacing:.06em}
+.topbar a{color:var(--bone);text-decoration:none;font-weight:600}
+.topbar a:hover{color:var(--rust-hot)}
+
+header.mast{
+  background:var(--clay);color:var(--bone);
+  border-bottom:5px solid var(--rust);
+}
+.mast .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem;gap:1rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--bone)}
+.brand svg{flex:none}
+.brand-name{font-family:"Oswald";font-weight:700;text-transform:uppercase;font-size:1.35rem;letter-spacing:.04em;line-height:1}
+.brand-name small{display:block;font-family:"Barlow Condensed";font-weight:500;font-size:.8rem;letter-spacing:.28em;color:var(--bone-dim);margin-top:.2rem}
+nav.main{display:flex;gap:1.25rem;flex-wrap:wrap}
+nav.main a{color:var(--bone);text-decoration:none;font-family:"Oswald";text-transform:uppercase;font-size:.85rem;letter-spacing:.1em;padding:.25rem 0;border-bottom:2px solid transparent}
+nav.main a:hover{border-bottom-color:var(--rust-hot);color:var(--rust-hot)}
+
+/* HERO — the oversized stat */
+.hero{
+  background:
+    linear-gradient(180deg,var(--clay) 0%,var(--clay-deep) 100%);
+  color:var(--bone);
+  text-align:center;
+  padding:4rem 1rem 4.5rem;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:14px;
+  background:repeating-linear-gradient(-45deg,var(--rust) 0 18px,var(--clay-deep) 18px 36px);
+}
+.hero .kicker{
+  font-family:"Oswald";text-transform:uppercase;letter-spacing:.3em;
+  font-size:.85rem;color:var(--bone-dim);
+}
+.bigstat{
+  font-family:"Oswald";font-weight:700;
+  font-size:clamp(6.5rem,24vw,17rem);
+  line-height:.9;
+  color:var(--bone);
+  letter-spacing:-.01em;
+  margin:.5rem 0 .25rem;
+  text-shadow:0 6px 0 rgba(0,0,0,.35);
+}
+.bigstat .star{color:var(--rust-hot);font-size:.55em;vertical-align:.28em}
+.stars{display:flex;justify-content:center;gap:.35rem;margin-bottom:.75rem}
+.stars svg{width:clamp(26px,5vw,44px);height:auto;filter:drop-shadow(0 3px 0 rgba(0,0,0,.35))}
+.fromline{
+  font-family:"Oswald";text-transform:uppercase;
+  font-size:clamp(1.3rem,4.5vw,2.4rem);
+  letter-spacing:.12em;font-weight:500;
+}
+.fromline em{font-style:normal;color:var(--rust-hot)}
+.hero p.sub{
+  max-width:34rem;margin:1.25rem auto 2rem;
+  font-size:1.2rem;color:var(--bone-dim);
+}
+.btn{
+  display:inline-block;
+  font-family:"Oswald";text-transform:uppercase;letter-spacing:.08em;font-weight:600;
+  background:var(--rust);color:#fff;text-decoration:none;
+  padding:1rem 2.25rem;font-size:1.15rem;
+  border:2px solid var(--rust);
+  box-shadow:0 4px 0 var(--clay-deep);
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+}
+.btn:hover{background:var(--rust-hot);transform:translateY(-2px);box-shadow:0 6px 0 var(--clay-deep)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--clay-deep)}
+.btn.ghost{background:transparent;color:var(--bone);border-color:var(--bone-dim);box-shadow:none;margin-left:.75rem}
+.btn.ghost:hover{border-color:var(--rust-hot);color:var(--rust-hot)}
+.hero .cta-row{display:flex;justify-content:center;gap:.25rem;flex-wrap:wrap;row-gap:.85rem}
+.hero .fineprint{margin-top:1.5rem;font-size:.95rem;color:#b9ac93;letter-spacing:.05em}
+
+/* section headers — work-order style */
+section{padding:4rem 0}
+.sec-head{display:flex;align-items:baseline;gap:1rem;margin-bottom:2.25rem;flex-wrap:wrap}
+.sec-head .num{
+  font-family:"Oswald";font-weight:700;font-size:.95rem;
+  color:var(--rust);letter-spacing:.15em;
+  border:2px solid var(--rust);padding:.15rem .5rem;
+}
+.sec-head h2{font-size:clamp(2rem,6vw,3.2rem);font-weight:700}
+.sec-head .rule{flex:1;min-width:60px;height:2px;background:var(--line);align-self:center}
+
+/* about */
+.about-grid{display:grid;gap:2.5rem;align-items:start}
+@media(min-width:800px){.about-grid{grid-template-columns:1.2fr .8fr}}
+.about-grid p{margin-bottom:1.1rem;max-width:38rem}
+.about-grid p strong{color:var(--rust)}
+.plain-list{list-style:none;border-top:2px solid var(--clay)}
+.plain-list li{
+  padding:.9rem .25rem;border-bottom:1px solid var(--line);
+  display:flex;gap:.75rem;align-items:baseline;
+  font-family:"Oswald";text-transform:uppercase;font-size:.95rem;letter-spacing:.06em;
+}
+.plain-list li::before{content:"✔";color:var(--olive);font-size:.9em}
+.about-note{
+  margin-top:1.5rem;background:var(--bone-dim);border-left:5px solid var(--olive);
+  padding:1rem 1.25rem;font-size:1.05rem;
+}
+
+/* services — rate-card / work order rows */
+.services{background:var(--olive);color:var(--bone)}
+.services .sec-head .num{color:var(--bone);border-color:var(--rust-hot)}
+.services .sec-head .rule{background:rgba(241,235,221,.3)}
+.svc-list{list-style:none;counter-reset:svc;border-top:2px solid var(--bone)}
+.svc-list li{
+  counter-increment:svc;
+  border-bottom:1px solid rgba(241,235,221,.25);
+  padding:1.5rem .25rem;
+  display:grid;gap:.5rem;
+  transition:background .15s ease,padding-left .15s ease;
+}
+.svc-list li:hover{background:var(--olive-deep);padding-left:.85rem}
+@media(min-width:760px){
+  .svc-list li{grid-template-columns:4rem 1fr 1.4fr;gap:1.5rem;align-items:baseline}
+}
+.svc-list li::before{
+  content:"0" counter(svc);
+  font-family:"Oswald";font-weight:700;font-size:1.4rem;color:var(--rust-hot);
+}
+.svc-list h3{font-size:1.35rem;font-weight:600}
+.svc-list p{color:#dcd6c4;font-size:1.05rem;max-width:34rem}
+.svc-tag{
+  display:inline-block;font-family:"Oswald";text-transform:uppercase;font-size:.7rem;
+  letter-spacing:.12em;background:var(--rust);color:#fff;padding:.15rem .5rem;margin-left:.5rem;vertical-align:middle;
+}
+
+/* emergency strip */
+.emergency{
+  background:var(--rust);color:#fff;padding:2.5rem 0;
+  border-top:6px solid var(--clay-deep);border-bottom:6px solid var(--clay-deep);
+}
+.emergency .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.emergency h2{font-size:clamp(1.6rem,4.5vw,2.4rem)}
+.emergency p{max-width:32rem;font-size:1.1rem}
+.emergency a.btn{background:var(--clay-deep);border-color:var(--clay-deep);box-shadow:0 4px 0 rgba(0,0,0,.3);white-space:nowrap}
+.emergency a.btn:hover{background:#000}
+
+/* who calls us */
+.who-grid{display:grid;gap:1.25rem}
+@media(min-width:760px){.who-grid{grid-template-columns:repeat(3,1fr)}}
+.who-card{
+  border:2px solid var(--clay);padding:1.5rem;
+  background:#fff9ec;
+  position:relative;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.who-card:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--rust)}
+.who-card h3{font-size:1.3rem;margin-bottom:.6rem;color:var(--olive-deep)}
+.who-card p{font-size:1.05rem}
+
+/* trust / reviews fact block */
+.trust{background:var(--clay);color:var(--bone);text-align:center}
+.trust .bignum{font-family:"Oswald";font-weight:700;font-size:clamp(4rem,14vw,8rem);line-height:1;color:var(--rust-hot)}
+.trust .label{font-family:"Oswald";text-transform:uppercase;letter-spacing:.2em;font-size:1rem;color:var(--bone-dim)}
+.trust-row{display:grid;gap:2.5rem;margin-top:1rem}
+@media(min-width:700px){.trust-row{grid-template-columns:repeat(3,1fr)}}
+.trust p.note{max-width:40rem;margin:2.5rem auto 0;color:var(--bone-dim);font-size:1.1rem}
+
+/* contact */
+.contact-grid{display:grid;gap:2.5rem}
+@media(min-width:800px){.contact-grid{grid-template-columns:1fr 1fr}}
+.phone-big{
+  font-family:"Oswald";font-weight:700;
+  font-size:clamp(2rem,7vw,3.4rem);
+  color:var(--clay);text-decoration:none;display:inline-block;line-height:1.1;
+  border-bottom:5px solid var(--rust);
+  transition:color .15s ease;
+}
+.phone-big:hover{color:var(--rust)}
+.contact-facts{list-style:none;margin-top:1.75rem;border-top:2px solid var(--clay)}
+.contact-facts li{padding:.8rem .25rem;border-bottom:1px solid var(--line);display:flex;gap:1rem}
+.contact-facts .k{font-family:"Oswald";text-transform:uppercase;font-size:.8rem;letter-spacing:.12em;color:var(--olive);min-width:7rem;padding-top:.2rem}
+.callcard{
+  background:var(--bone-dim);border:2px dashed var(--olive);padding:2rem;
+}
+.callcard h3{font-size:1.5rem;margin-bottom:1rem}
+.callcard ol{margin:0 0 1.5rem 1.25rem}
+.callcard ol li{margin-bottom:.6rem}
+
+/* footer */
+footer{background:var(--clay-deep);color:#b9ac93;padding:2.5rem 0;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+footer a{color:var(--bone-dim)}
+footer .credit{font-size:.8rem;letter-spacing:.05em;opacity:.7}
+
+/* reveal */
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(18px);animation:rise .7s ease forwards}
+  @supports (animation-timeline: view()){
+    .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 30%}
+  }
+  @keyframes rise{to{opacity:1;transform:none}}
+}
+/* sticky mobile call button */
+.sticky-call{
+  position:fixed;bottom:1rem;right:1rem;z-index:50;
+  background:var(--rust);color:#fff;text-decoration:none;
+  font-family:"Oswald";text-transform:uppercase;letter-spacing:.06em;font-weight:600;
+  padding:.85rem 1.4rem;box-shadow:0 4px 12px rgba(0,0,0,.35);
+  display:flex;align-items:center;gap:.5rem;border-radius:4px;
+}
+.sticky-call:hover{background:var(--rust-hot)}
+@media(min-width:900px){.sticky-call{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><strong>Backed up? Don't wait.</strong> Emergency septic calls answered.</span>
+    <a href="tel:+18122766455">☎ (812) 276-6455</a>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Moore's Septic Service — home">
+      <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
+        <rect x="2" y="2" width="40" height="40" fill="none" stroke="#c1541c" stroke-width="3"/>
+        <path d="M8 30 L14 14 L22 26 L30 14 L36 30" fill="none" stroke="#f1ebdd" stroke-width="3.5" stroke-linecap="square"/>
+      </svg>
+      <span class="brand-name">Moore's Septic Service<small>Pump · Inspect · Repair</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#who">Who We Serve</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO: the stat IS the hero -->
+  <section class="hero" aria-labelledby="hero-h">
+    <p class="kicker">Family-run · Straight answers · No upsell</p>
+    <div class="bigstat" aria-hidden="true">5.0<span class="star">★</span></div>
+    <div class="stars" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path fill="#d9601f" d="M12 1.5l3.1 6.9 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.5l1.7-7.4-5.6-5 7.4-.7z"/></svg>
+      <svg viewBox="0 0 24 24"><path fill="#d9601f" d="M12 1.5l3.1 6.9 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.5l1.7-7.4-5.6-5 7.4-.7z"/></svg>
+      <svg viewBox="0 0 24 24"><path fill="#d9601f" d="M12 1.5l3.1 6.9 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.5l1.7-7.4-5.6-5 7.4-.7z"/></svg>
+      <svg viewBox="0 0 24 24"><path fill="#d9601f" d="M12 1.5l3.1 6.9 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.5l1.7-7.4-5.6-5 7.4-.7z"/></svg>
+      <svg viewBox="0 0 24 24"><path fill="#d9601f" d="M12 1.5l3.1 6.9 7.4.7-5.6 5 1.7 7.4L12 17.6 5.4 21.5l1.7-7.4-5.6-5 7.4-.7z"/></svg>
+    </div>
+    <h1 id="hero-h" class="fromline">From <em>42 neighbors</em>. Not one bad word.</h1>
+    <p class="sub">Septic pumping, inspections, and repair done right the first time — by the local operator your neighbors already trust with theirs.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+18122766455">Call (812) 276-6455</a>
+      <a class="btn ghost" href="#services">See What We Do</a>
+    </div>
+    <p class="fineprint">42 reviews · 5.0-star average · every single one earned in the field</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">01</span>
+        <h2 id="about-h">The Guy You Call, Not a Call Center</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>Septic work is one of those trades where trust is everything — you can't see what's underground, so you're relying on the person standing in your yard to tell you the truth. <strong>That's the whole business model at Moore's Septic Service:</strong> tell people what's actually wrong, fix what actually needs fixing, and charge a fair price for it.</p>
+          <p>Moore's is a small, family-run operation serving homeowners and rural property owners in the local area. No franchise scripts, no commission-based "technicians" hunting for things to sell you. When you call, you get a straight answer about whether your tank needs pumping, whether that soggy spot means trouble, and what it'll take to sort it out.</p>
+          <p>The proof isn't in a slogan — it's in a perfect 5.0-star rating across 42 reviews from people down the road who'd tell you plainly if it were otherwise.</p>
+        </div>
+        <div class="reveal">
+          <ul class="plain-list">
+            <li>Family-run, locally owned and operated</li>
+            <li>5.0 stars — 42 reviews, zero complaints</li>
+            <li>Honest diagnostics, no scare tactics</li>
+            <li>Fast response on emergency backups</li>
+            <li>Pre-sale inspections for real estate deals</li>
+          </ul>
+          <p class="about-note">Not sure if you even need service yet? Call anyway. We'd rather tell you your tank can wait another year than pump it just to bill you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">02</span>
+        <h2 id="svc-h">What We Do</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <ul class="svc-list">
+        <li class="reveal">
+          <h3>Septic Tank Pumping</h3>
+          <p>Routine pump-outs to keep your system healthy and your drain field alive. Most tanks need it every 3–5 years — we'll tell you honestly where yours stands.</p>
+        </li>
+        <li class="reveal">
+          <h3>Septic Inspections <span class="svc-tag">Real Estate Ready</span></h3>
+          <p>Buying or selling a property on septic? We inspect the tank, lines, and drain field and give you a plain-English report — before it becomes a closing-day surprise.</p>
+        </li>
+        <li class="reveal">
+          <h3>Repair &amp; Maintenance</h3>
+          <p>Broken baffles, failed lids, sluggish lines, root intrusion — the everyday problems that turn into expensive ones when ignored. Caught early, most are simple fixes.</p>
+        </li>
+        <li class="reveal">
+          <h3>New System Installation</h3>
+          <p>Building, replacing, or upgrading? Ask us about new system installation and we'll walk you through what your property and soil actually call for.</p>
+        </li>
+        <li class="reveal">
+          <h3>Emergency Backup Calls <span class="svc-tag">Fast Response</span></h3>
+          <p>Sewage backing into the house doesn't keep business hours. When it's urgent, we treat it that way — call and we'll get to you fast.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EMERGENCY STRIP -->
+  <section class="emergency" aria-labelledby="em-h">
+    <div class="wrap">
+      <div>
+        <h2 id="em-h">Toilets gurgling? Yard smells wrong? Water where it shouldn't be?</h2>
+        <p>Those are warning shots. Call before it becomes a flooded basement or a dead drain field.</p>
+      </div>
+      <a class="btn" href="tel:+18122766455">Call Now — (812) 276-6455</a>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section id="who" aria-labelledby="who-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">03</span>
+        <h2 id="who-h">Who Calls Moore's</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="who-grid">
+        <div class="who-card reveal">
+          <h3>Homeowners on Septic</h3>
+          <p>Routine pumping, honest maintenance advice, and someone who answers the phone when something backs up on a Saturday.</p>
+        </div>
+        <div class="who-card reveal">
+          <h3>Rural &amp; Country Property Owners</h3>
+          <p>Farms, acreage, and out-of-the-way places. We know rural systems — and we'll actually drive out to yours.</p>
+        </div>
+        <div class="who-card reveal">
+          <h3>Real Estate Agents &amp; Buyers</h3>
+          <p>Pre-sale septic inspections with clear, no-nonsense findings so your deal doesn't stall over an unknown underground.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BLOCK -->
+  <section class="trust" aria-labelledby="trust-h">
+    <div class="wrap">
+      <h2 id="trust-h" class="sec-head" style="justify-content:center"><span style="font-size:clamp(1.6rem,5vw,2.6rem)">The Record Speaks Plain</span></h2>
+      <div class="trust-row">
+        <div class="reveal">
+          <div class="bignum">5.0</div>
+          <div class="label">Star Rating</div>
+        </div>
+        <div class="reveal">
+          <div class="bignum">42</div>
+          <div class="label">Neighbor Reviews</div>
+        </div>
+        <div class="reveal">
+          <div class="bignum">0</div>
+          <div class="label">Bad Ones</div>
+        </div>
+      </div>
+      <p class="note">In a trade where folks half-expect to get overcharged, a perfect rating isn't luck. It's forty-two separate people who got a fair shake and said so publicly.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">04</span>
+        <h2 id="contact-h">Get On the Schedule</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p style="margin-bottom:1rem">One call gets you a straight answer and a free quote:</p>
+          <a class="phone-big" href="tel:+18122766455">(812) 276-6455</a>
+          <ul class="contact-facts">
+            <li><span class="k">Business</span><span>Moore's Septic Service — family-run septic system service</span></li>
+            <li><span class="k">Service Area</span><span>The local rural and suburban community and surrounding area — call to confirm we cover your property</span></li>
+            <li><span class="k">Emergencies</span><span>Backup and urgent calls handled with fast response</span></li>
+            <li><span class="k">Online</span><span><a href="https://www.facebook.com/profile.php?id=100093076728169" rel="noopener">Find us on Facebook</a></span></li>
+          </ul>
+        </div>
+        <div class="callcard reveal">
+          <h3>What to Have Handy When You Call</h3>
+          <ol>
+            <li><strong>Your address</strong> — so we can confirm you're in our service area.</li>
+            <li><strong>What you're noticing</strong> — slow drains, odor, wet spots, or just due for a pump-out.</li>
+            <li><strong>Last pump date, if known</strong> — no worries if you don't; we can figure it out on site.</li>
+          </ol>
+          <a class="btn" href="tel:+18122766455">Request a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a class="sticky-call" href="tel:+18122766455" aria-label="Call Moore's Septic Service">
+  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+  Call Now
+</a>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="font-family:'Oswald';text-transform:uppercase;color:#f1ebdd;letter-spacing:.06em">Moore's Septic Service</strong><br>
+      © 2026 · <a href="tel:+18122766455">(812) 276-6455</a> · <a href="https://www.facebook.com/profile.php?id=100093076728169" rel="noopener">Facebook</a>
+    </div>
+    <div class="credit">Website sample by Wild Card Creative Co</div>
+  </div>
+</footer>
+
+</body>
+</html>
